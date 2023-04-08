@@ -2,15 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Al's website</title>
+    <title>My Website</title>
     <style>
-     
-      @font-face {
-        font-family: 'Roboto Mono';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);
-      }
       body {
         background-color: rgb(40, 40, 44);
         font-family: 'Roboto Mono', monospace;
@@ -18,10 +11,9 @@
       #hello {
         font-size: 36px;
         position: absolute;
-        top: -50;
+        top: 0;
         left: 0;
-		color: white;
-		font-family: 'Roboto Mono', monospace;
+        color: white;
       }
       #hi {
         font-size: 36px;
@@ -33,11 +25,25 @@
         color: white;
         font-family: 'Roboto Mono', monospace;
       }
-      
+      #Button {
+        font-size: 36px;
+        background-color: rgb(40, 40, 44);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Roboto Mono', monospace;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body>
-    <div id="hello">al's website thing idk</div>
-    <div id="hi">You landed on Al's website. How did you end up here?</div>
+    <div id="hello">Hello</div>
+    <div id="hi">Hi</div>
+    <button id="Button" onclick="window.location.href='https://github.com/Alduck/alduck.github.io/blob/main/%C3%87ark%C4%B1Ek.exe?raw=true;">Click me!</button>
   </body>
 </html>
