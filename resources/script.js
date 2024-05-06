@@ -650,7 +650,7 @@ removeWheelBtn.addEventListener("click", () => {
                      document.getElementById("submit-btn").addEventListener("click", () => {
                       const userInput2 = document.getElementById("user-input").value;
                       console.log("User input:", userInput2)
-                           if (userInput2.toLowerCase() === "ünsüz türemesi")
+                           if (userInput2.toLowerCase() === "ünlü düşmesi")
                             {
                               console.log("accepted.");
                               submitbtn.style.display = "none";
