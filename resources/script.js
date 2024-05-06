@@ -6,6 +6,8 @@ const annoyingArrow=document.getElementById("arrow");
 const submitbtn=document.getElementById("submit-btn");
 const userinputbtn=document.getElementById("user-input");
 const restartbtn=document.getElementById("restart");
+var audio = document.getElementById("wheelSound");
+var audio2 = document.getElementById("wheelSound2");
 // Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
   { minDegree: 0, maxDegree: 45, value: "-ım -im" },
@@ -100,6 +102,8 @@ let count = 0;
 let resultValue = 101;
 // Start spinning
 spinBtn.addEventListener("click", () => {
+	audio.play();
+	audio2.play();
   spinBtn.disabled = true;
   removeWheelBtn.disabled = true; // Disable remove button while spinning
   // Empty final value
@@ -115,6 +119,8 @@ spinBtn.addEventListener("click", () => {
     myChart.options.rotation = myChart.options.rotation + resultValue;
     // Update chart with new value
     myChart.update();
+	  audio.pause();
+	audio2.pause();
     // If rotation > 360 reset it back to 0
     if (myChart.options.rotation >= 360) {
       count += 1;
