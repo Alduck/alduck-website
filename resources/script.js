@@ -6,7 +6,7 @@ const annoyingArrow=document.getElementById("arrow");
 const submitbtn=document.getElementById("submit-btn");
 const userinputbtn=document.getElementById("user-input");
 const restartbtn=document.getElementById("restart");
-var audio = document.getElementById("wheelSound");
+var audio = document.getElementById("wheelSound1");
 var audio2 = document.getElementById("wheelSound2");
 // Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
