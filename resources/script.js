@@ -101,9 +101,7 @@ let resultValue = 101;
 // Start spinning
 spinBtn.addEventListener("click", () => {
 	 var audio = document.getElementById("wheelSound1");
-var audio2 = document.getElementById("wheelSound2");
 	audio.play();
-	audio2.play();
   spinBtn.disabled = true;
   removeWheelBtn.disabled = true; // Disable remove button while spinning
   // Empty final value
@@ -119,8 +117,6 @@ var audio2 = document.getElementById("wheelSound2");
     myChart.options.rotation = myChart.options.rotation + resultValue;
     // Update chart with new value
     myChart.update();
-	  audio.pause();
-	audio2.pause();
     // If rotation > 360 reset it back to 0
     if (myChart.options.rotation >= 360) {
       count += 1;
@@ -129,6 +125,7 @@ var audio2 = document.getElementById("wheelSound2");
     } else if (count > 15 && myChart.options.rotation == randomDegree) {
       valueGenerator(randomDegree);
       clearInterval(rotationInterval);
+	    audio.pause();
       count = 0;
       resultValue = 101;
     }
