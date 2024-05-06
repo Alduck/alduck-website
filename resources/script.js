@@ -6,8 +6,6 @@ const annoyingArrow=document.getElementById("arrow");
 const submitbtn=document.getElementById("submit-btn");
 const userinputbtn=document.getElementById("user-input");
 const restartbtn=document.getElementById("restart");
-var audio = document.getElementById("wheelSound1");
-var audio2 = document.getElementById("wheelSound2");
 // Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
   { minDegree: 0, maxDegree: 45, value: "-ım -im" },
@@ -102,6 +100,8 @@ let count = 0;
 let resultValue = 101;
 // Start spinning
 spinBtn.addEventListener("click", () => {
+	 var audio = document.getElementById("wheelSound1");
+var audio2 = document.getElementById("wheelSound2");
 	audio.play();
 	audio2.play();
   spinBtn.disabled = true;
