@@ -1,0 +1,59 @@
+:root {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+p 
+{
+    text-align: center;
+    
+}
+
+
+#karaboga {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-bottom: 1em; 
+}
+
+#karaboga img {
+    max-width: 100%;
+    max-height: 150px; 
+    object-fit: cover; 
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    padding: 30px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    background: url(image0.jpg) center / cover no-repeat fixed;
+}
+
+.card {
+    width: 500px;
+    padding: 35px;
+    border: 1px solid rgba(66, 66, 66, 0.25);
+    border-radius: 20px;
+    background-color: rgba(85, 70, 70, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-text {
+    text-align: center; 
+    margin-top: auto; 
+}
